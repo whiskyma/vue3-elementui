@@ -1,0 +1,204 @@
+@import './element.styl'
+
+body,html
+    width:100%;
+    height:100%;
+    font-size:15px;
+    overflow-x: hidden
+*
+    margin:0;
+    padding:0;
+    list-style:none;
+i,em,b
+    font-style:normal;
+    font-weight:normal;
+input,textarea,select
+    -webkit-appearance:none;
+    border:0;
+    background:transparent;
+button,input,input[type=button]:focus
+    overflow visible
+    outline none
+    border 0
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+input,a,span
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+a
+    text-decoration none
+    color #666
+#app
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    height:100%;
+
+.display-enter,.display-leave-active
+    opacity: 0
+.display-enter-active,.display-leave
+    transition: all .5s ease
+    -moz-transition: all .5s ease
+    -webkit-transition: all .5s ease
+    -o-transition: all .5s ease
+
+
+// login
+.login
+    height 100%
+    background-color #f7f4f4
+    position relative
+    .model
+        position absolute
+        top 40%
+        left 50%
+        background-color #fff
+        border-radius 8px
+        transform: translate(-50%, -50%)
+        box-shadow: 0 0 10px #ddd
+        .box
+            width 350px
+            padding 10px
+            min-height 200px
+    .el-form
+        width 280px
+        margin 0 auto
+        button
+            width 100%
+            margin-top: 17px
+    h3
+        color: #6b6b6b
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        margin: 15px auto 35px
+.layout
+    width 100%
+    height 100%
+    position relative
+    .left
+        width 200px
+        position fixed
+        top 0
+        left 0
+        bottom 0
+        overflow-y: auto
+        transition all .3s
+        .logo
+            height: 50px
+            width: 140px
+            // background: url('./../../assets/images/logo.svg') no-repeat 50%/contain
+            background-color: #9898ce;
+            cursor: pointer
+            position: fixed
+            margin-left: 26px
+            margin-top: 8px
+            top: 0
+        .logo_s
+            // background: url('./../../assets/images/logo_s.svg') no-repeat 50%/contain
+            background-color: #9898ce;
+            margin-top 7px
+            width 65px
+            margin-left 0
+        .menu
+            position: fixed
+            top: 65px
+            left: 0
+            bottom: 0
+            width: 200px
+    .l-close
+        width 65px
+    .right
+        // padding-left 200px
+        background-color: #F0F0F0
+        height 100%
+        transition all .3s
+        position fixed
+        top 0
+        right 0
+        bottom 0
+        left 200px
+        .view-head
+            height 55px
+            line-height 55px
+            background-color #fff
+            padding 0 10px
+        .el-icon-s-fold,.el-icon-s-unfold
+            font-size 30px
+            cursor pointer
+            position: relative
+            top: 6px
+        .userbox
+            float right
+            position relative
+            .dropdown
+                position absolute
+                top 48px
+                right 0
+                width 116px
+                box-shadow: 0 0 10px #ddd;
+                text-align center
+                background-color: #fff;
+                z-index 99
+                cursor pointer
+                display none
+                p
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    color: #666;
+                    border-bottom: 1px solid #f2f2f2;
+                    &:hover
+                        background-color: #ecf5ff;
+                        color: #66b1ff;
+            &:hover
+                .dropdown
+                    display block
+            .avatar
+                float: right;
+                width: 40px;
+                height: 40px;
+                border: 2px solid #ddd;
+                margin: 5px 0 0 0;
+                cursor: pointer;
+            .userName
+                float: right;
+                font-size: 17px;
+                margin-right: 10px;
+        .view-nav
+            background-color: #fff
+            margin: 5px 10px
+            padding: 7px 10px
+            border-radius: 4px;
+            height: 40px;
+        .view-con
+            // height: 100%
+            background-color: #fff
+            margin: 5px 10px 10px 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px #ddd;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 114px;
+            overflow-y: auto;
+    .r-close
+        left: 65px;
+
+.avatar
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid #ddd
+    background: url('./../../assets/images/author.png') no-repeat 50%/100%;
+    display: block;
+    margin: 20px auto;
+.userName
+    font-size 20px
+    cursor pointer
+    color #409EFF
+    text-align: center;
+
+
+
+
+
