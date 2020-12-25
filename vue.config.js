@@ -139,11 +139,11 @@ module.exports = {
             }
         };
     },
-	devServer: {
-		host: "localhost",
+    devServer: {
+        host: "localhost",
         // host: "192.168.50.119",
-		port: 7878,
-		https: false,
-		open: true
-	}
+        port: 7878,
+        https: false,
+        open: true
+    }
 };
