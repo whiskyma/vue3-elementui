@@ -13,7 +13,7 @@ export default {
     },
     data(){
         return {
-           
+           msg: 'this is a msg'
         }
     },
     computed: {
