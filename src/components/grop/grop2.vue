@@ -1,6 +1,6 @@
 <template lang="pug">
-    .table2
-        p grop2
+.table2
+    p grop2
 </template>
 
 <script>

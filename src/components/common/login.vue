@@ -1,20 +1,20 @@
 <template lang="pug">
-    .login
-        .model
-            .box
-                h3 后台管理系统-欢迎登录
-                el-form(:model="ruleForm",:rules="rules",ref="ruleForm")
-                    el-form-item(prop="userName")
-                        el-input(v-model="ruleForm.userName",placeholder="请输入用户名",clearable)
-                            template(slot="prepend")
-                                i.el-icon-user
-                    el-form-item(prop="password")
-                        el-input(v-model="ruleForm.password",type="password",placeholder="请输入密码",clearable,show-password)
-                            template(slot="prepend")
-                                i.el-icon-unlock
-                    span 账号密码随便输入即可登录
-                    el-form-item
-                        el-button(type="primary",@click="submitForm('ruleForm')",:loading="loading",v-waves) 登录
+.login
+    .model
+        .box
+            h3 后台管理系统-欢迎登录
+            el-form(:model="ruleForm",:rules="rules",ref="ruleForm")
+                el-form-item(prop="userName")
+                    el-input(v-model="ruleForm.userName",placeholder="请输入用户名",clearable)
+                        template(slot="prepend")
+                            i.el-icon-user
+                el-form-item(prop="password")
+                    el-input(v-model="ruleForm.password",type="password",placeholder="请输入密码",clearable,show-password)
+                        template(slot="prepend")
+                            i.el-icon-unlock
+                span 账号密码随便输入即可登录
+                el-form-item
+                    el-button(type="primary",@click="submitForm('ruleForm')",:loading="loading",v-waves) 登录
         
 </template>
 

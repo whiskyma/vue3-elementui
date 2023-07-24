@@ -1,15 +1,15 @@
 <template lang="pug">
-    .home
-        .avatar
-        .userName(v-if="getInfo") {{getInfo.userName}}
-        ul(v-if="getInfo")
-            li 登录时间: 
-            li {{$formatDate(getInfo.loginTime)}}
-            li 登录地点: 
-            li {{getInfo.ipAddr}}
-            li 登录IP: 
-            li {{getInfo.loginIp}}
-        p(v-for="it in 200") 阿斯蒂芬阿斯蒂芬
+.home
+    .avatar
+    .userName(v-if="getInfo") {{getInfo.userName}}
+    ul(v-if="getInfo")
+        li 登录时间: 
+        li {{$formatDate(getInfo.loginTime)}}
+        li 登录地点: 
+        li {{getInfo.ipAddr}}
+        li 登录IP: 
+        li {{getInfo.loginIp}}
+    p(v-for="it in 200") 阿斯蒂芬阿斯蒂芬
 </template>
 
 <script>
