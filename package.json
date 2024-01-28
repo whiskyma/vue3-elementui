@@ -12,6 +12,7 @@
     "element-ui": "^2.13.0",
     "js-md5": "^0.7.3",
     "nprogress": "^0.2.0",
+    "svgaplayerweb": "^2.3.2",
     "vue": "^2.6.10",
     "vue-router": "^3.1.1",
     "vue2-toast": "^2.1.0",
